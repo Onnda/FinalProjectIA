@@ -659,6 +659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e14c4ae73c6454cb00f02a10738711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leader: {fileID: 491036844}
+  speed: 2
+  minmumdistance: 2
 --- !u!114 &255794907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +674,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed67e02bceb2824590516de519a03d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dinoPrefab: {fileID: 836140130}
+  numFlock: 20
+  allFlock: []
+  flyLimits: {x: 5, y: 5, z: 5}
+  goalPos: {x: 0, y: 0, z: 0}
+  minSpeed: 0
+  maxSpeed: 0
+  neighbourDistance: 1
+  rotationSpeed: 1
 --- !u!4 &255794908
 Transform:
   m_ObjectHideFlags: 0
@@ -1056,7 +1068,7 @@ PrefabInstance:
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33709
+      value: 0.33709013
       objectReference: {fileID: 0}
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
@@ -1066,7 +1078,7 @@ PrefabInstance:
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.33709
+      value: 0.33709013
       objectReference: {fileID: 0}
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
@@ -1076,7 +1088,7 @@ PrefabInstance:
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.1
+      value: -20.099998
       objectReference: {fileID: 0}
     - target: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
@@ -1153,6 +1165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90c5207955107446848a2ee2d6a50db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
+  moveInterval: 2
+  range: 5
+--- !u!4 &491036844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
+    type: 3}
+  m_PrefabInstance: {fileID: 759532505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &491036846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1628,6 +1649,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e14c4ae73c6454cb00f02a10738711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leader: {fileID: 491036844}
+  speed: 2
+  minmumdistance: 2
 --- !u!114 &836140132
 MonoBehaviour:
   m_ObjectHideFlags: 0
