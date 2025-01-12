@@ -834,9 +834,9 @@ MonoBehaviour:
   flyLimits: {x: 5, y: 5, z: 5}
   goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 0.89
-  maxSpeed: 3.34
-  neighbourDistance: 3.03
-  rotationSpeed: 3.89
+  maxSpeed: 5
+  neighbourDistance: 10
+  rotationSpeed: 2.18
 --- !u!4 &255794908
 Transform:
   m_ObjectHideFlags: 0
@@ -845,12 +845,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255794905}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.87099, y: 51.478188, z: -28.225307}
+  m_LocalRotation: {x: -0, y: 0.9998975, z: -0, w: -0.014323883}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 952283578}
+  m_Father: {fileID: 491036844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &273262909
 PrefabInstance:
@@ -1941,7 +1941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6819637700004880021, guid: 17dd5cd2b127a424c8ececbb11cd4589,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 255794908}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6192424163284042799, guid: 17dd5cd2b127a424c8ececbb11cd4589,
         type: 3}
@@ -2586,7 +2590,6 @@ Transform:
   m_Children:
   - {fileID: 491036844}
   - {fileID: 836140137}
-  - {fileID: 255794908}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &974322704
